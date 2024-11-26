@@ -1,4 +1,4 @@
 count=0
 for i in range(50):
     print(i)
-    count+=count + 3
+    
