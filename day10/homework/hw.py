@@ -25,7 +25,7 @@ password=input("repeate your password")
 
 print(True and False)
 print(False and True)
-print(True or Falase)
+print(True or False)
 print(False or True)
 
 

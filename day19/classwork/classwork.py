@@ -11,6 +11,6 @@
 #სიტყვის შემობრუნდებული ვერსიაა
 #text=["H", "e", "l", "l", "o" " ", "w", "o", "r", "l", "d"]
 #print(text[::-1])
-text=hello world
+text="hello world"
 reverse_text
 print (text)
