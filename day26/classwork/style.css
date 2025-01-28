@@ -1,11 +1,11 @@
 .heading1 {
     color: aqua;
-    text-align: center;
+    text-align:center;
 }
 /* მიყავს იმ მიმართულებით საითაც ვუბრძანებთ */
 .heading2 {
     color: blue;
-    text-transform: lowercase;
+    text-transform:lowercase;
     /* აკონტროლებს ტექსტის კაპიტალიზაციას ანუ ჩვეულებრივ ტრანსფორმაციას აკეთებს წინადადებაზე და სიტყვებზე */
 }
 .heading3 {
@@ -15,7 +15,7 @@
 }
 .heading4 {
     color: brown;
-    text-shadow: 2px 5px 10px violet;
+    text-shadow: 12px 10px 10px violet;
     /* აკეთებს  ტექსტის ჩრდილს და წევს იმდენი პიქსელით რამდენითც ვუბრძანებთ ასევე შეგვიძლია მივანიჭოთ ფერი და სიბლარე */
 }
 .heading5 {
@@ -25,8 +25,8 @@
 
 }
 .heading6 {
-    word-spacing: 20px;
-    /* აშორებს და აახლოვებს ასოებს */
-    letter-spacing: 30px;
+    word-spacing: 80px;
     /* აშორებს და აახლოვებს სიტყვებს */
+    letter-spacing: 20px;
+    /* აშორებს და აახლოვებს ასოებს */
 }
