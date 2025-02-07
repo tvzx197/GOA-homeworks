@@ -1,4 +1,4 @@
-mark = int(input("enter your mark"))
+mark = int(input("enter your mark:"))
 
 if mark >0 and mark <60:
     print = ("F")
