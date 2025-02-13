@@ -31,7 +31,7 @@ div:hover {
     font-size: 30px;
 } */
 
-table {
+/* table {  
     width: 520px;
     text-align: center;
     border-collapse: collapse;
@@ -56,5 +56,41 @@ tr:nth-child(5) {
     background-color: red;
 }
 tr:nth-child(6) {
-    background-color:skyblue;
+    background-color:skyblue; 
+} */
+ /* body { 
+    background-color: rgb(169, 102, 172);
 }
+tr:nth-child(1) {
+    background-color:rgb(220, 43, 226);
+    color: white;
+}
+table { 
+    text-align: center;
+    border-collapse: collapse;
+    background-color: white;
+} */
+ /* body { 
+    background-color: rgb(142, 201, 130);
+ }
+ table { 
+    text-align: center;
+    border-collapse: collapse;
+    color: white;
+ }
+ tr:nth-child(1) {
+    background-color: rgb(166, 214, 170);
+ }*/
+ body {
+    background-color: rgb(13, 12, 26);
+ }
+ table { 
+    width: 520px;
+    text-align: center;
+    border-collapse: collapse;
+    color: white;
+ }
+ tr:nth-child(1) {
+    color: blue;
+ }
+
