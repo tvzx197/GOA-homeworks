@@ -1,0 +1,107 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+  }
+  
+  header {
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px;
+    position: relative;
+  }
+  
+  header h1 {
+    font-size: 24px;
+  }
+  
+  nav ul {
+    list-style: none;
+    display: flex;
+  }
+  
+  nav ul li {
+    margin-left: 20px;
+  }
+  
+  nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+  }
+  
+  .navigation {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+  
+  .section {
+    padding: 50px 20px;
+  }
+  
+  .static {
+    position: static; 
+  }
+  
+  .absolute {
+    position: relative;
+    background-color: #f4f4f4;
+    padding: 20px;
+  }
+  
+  .absolute-box {
+    position: absolute;
+    top: 50px;
+    left: 50px;
+    background-color: #ddd;
+    padding: 20px;
+    border: 1px solid #ccc;
+  }
+  
+  .absolute-positioned-content {
+    position: relative;
+    background-color: #fafafa;
+  }
+  
+  .absolute-inside {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    background-color: #eee;
+    padding: 15px;
+    border: 1px solid #ccc;
+  }
+  
+  .sticky {
+    background-color: #e0f7fa;
+    padding: 30px;
+    height: 200px;
+  }
+  
+  .sticky-element {
+    position: sticky;
+    top: 10px;
+    background-color: #fff;
+    padding: 20px;
+    border: 1px solid #ccc;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+  }
