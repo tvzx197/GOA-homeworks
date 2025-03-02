@@ -1,0 +1,76 @@
+.container {
+    margin: 100px;
+}
+.parent {
+    width: 400px;
+    height: 300px;
+    background-color: rgb(204, 198, 198);
+    border-radius: 15px;
+    
+}
+
+.child {
+    width: 200px;
+    height: 300px;
+    background-color: rgb(99, 29, 190);
+    border-radius: 15px;
+    text-align: center;
+    color: grey;;
+    position: absolute;
+    
+    
+    
+}
+.nth {
+    width: 80px;
+    height: 80px;
+    background-color:rgb(99, 36, 158);
+    position: absolute;
+    margin-left: 45px;
+    margin-top: 40px;
+    text-align: center;
+    border-radius: 50%;
+    padding: 10px;
+    font-size: 60px;
+    color: #f4f4f4;
+
+
+
+}
+.of {
+    font-size: 12px;
+    color: grey;
+}
+.child a {
+    position: absolute;
+    margin-top: 150px;
+    margin-left: -30px;
+    color: #f4f4f4;
+}
+.smth {
+    position: absolute;
+    margin-top: 170px;
+}
+.topic {
+    position: absolute;
+    margin-left: 205px;
+    font-size: 20px;
+
+
+}
+.buttoncontainer {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    left: 310px;
+    bottom: 380px;
+}
+.last {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    left: 310px;
+    bottom: 380px;
+}
+
