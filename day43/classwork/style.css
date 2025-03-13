@@ -1,0 +1,35 @@
+
+ * {
+    margin: auto0px;
+    padding: 0px;
+ }
+ :root {
+    --h1Color:blue;
+    --h1Font-size:20px;
+    --h1Letter-spacing:2px;
+    --h1Display:inline;
+    --h1Display:inline-block;
+    --h1Display:block;
+    --h1Position:absolute;
+    --h1Transform:rotate(90px);
+    --h1Padding: 10px;
+    --h1Margin: 10px;
+
+    --pcolor:blue;
+    --pfont-size:2px;
+    --pletter-spacing:2px;
+    --pdisplay:inline;
+    --pdisplay:inline-block;
+    --pdisplay:block;
+    --pposition:absolute;
+    --ptransform:rotate(90px);
+    --ppadding: 10px;
+    --pmargin: 10px;
+
+
+ } 
+ h1{
+    color: var(--h1color);
+    font-size:var(--h1font-size)
+    
+ }

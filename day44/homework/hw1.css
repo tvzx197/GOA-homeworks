@@ -1,0 +1,68 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f0f0f0;
+}
+
+.container {
+    display: flex;
+    max-width: 900px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card {
+    padding: 40px;
+    color: white;
+    flex: 1;
+}
+
+.card h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.card p {
+    font-size: 14px;
+    line-height: 1.5;
+    margin-bottom: 30px;
+}
+
+.card .button {
+    background-color: white;
+    padding: 10px 20px;
+    border-radius: 20px;
+    text-decoration: none;
+    font-size: 14px;
+    display: inline-block;
+}
+
+.sedans {
+    background-color: #e28525;
+}
+
+.sedans .button {
+    color: #e28525;
+}
+
+.suvs {
+    background-color: #016972;
+}
+
+.suvs .button {
+    color: #016972;
+}
+
+.luxury {
+    background-color: #00403f;
+}
+
+.luxury .button {
+    color: #00403f;
+}
