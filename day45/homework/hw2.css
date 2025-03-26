@@ -1,0 +1,57 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    text-align: center;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+header hr {
+    border: 1px solid #333;
+    width: 50%;
+    margin: 0 auto 20px;
+}
+
+main h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+main h3 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+main p {
+    font-size: 1rem;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+main ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+main ul li {
+    margin-bottom: 10px;
+}
+
+main ul li input[type="checkbox"] {
+    margin-right: 10px;
+}
