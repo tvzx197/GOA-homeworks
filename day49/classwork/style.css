@@ -1,0 +1,27 @@
+body{
+    padding: 0;
+    margin:0;
+
+}
+.name{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: gray;
+}
+.lorem{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 70px;
+    padding-left: 500px;
+}
+@media(max-width:768px){
+    .name{
+        display: none;
+    }
+    .lorem{
+        padding-top: 40px;
+        padding-right: 250px;
+    }
+}

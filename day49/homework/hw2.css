@@ -1,0 +1,36 @@
+.container {
+    position: relative;
+    display: flex;
+    width: 600px;
+    height: 800px;
+    background-color: #f4f4f4;
+    border-radius: 5px;
+  }
+  
+  .container>.photo_container {
+    position: relative;
+    width: 50%;
+    height: 100%;
+  }
+  
+  .container>.photo_container>img {
+    position: relative;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .container>.info_container {
+    position: relative;
+    width: 50%;
+    height: 100%;
+    padding: 15px;
+  }
+  
+  .container>.info_container>p {
+    position: relative;
+    color: #555
+  }
+  
+  .container>.info_container>p:nth-child(1) {
+    text-transform: uppercase;
+  }
