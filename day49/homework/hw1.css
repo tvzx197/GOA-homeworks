@@ -1,0 +1,92 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Inter;
+    font-size: 14px;
+    color: hsl(0, 0%, 100%);
+    background-color: hsl(0, 0%, 8%);
+}
+
+.social-links-profile {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 50px auto;
+    padding: 20px;
+    width: 300px;
+    height: auto;
+    background-color: hsl(0, 0%, 12%);
+    border-radius: 10px;
+}
+
+.social-links-profile>.social-links-div-one {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.social-links-profile>.social-links-div-one>img {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+}
+
+.social-links-profile>.social-links-div-one>h2 {
+    margin-top: 20px;
+}
+
+.social-links-profile>.social-links-div-one>span {
+    color: hsl(75, 94%, 57%);
+    font-size: 12px;
+    margin-top: 5px;
+}
+
+.social-links-profile>.social-links-div-one>p {
+    color: #ccc;
+    font-size: 13px;
+    margin-top: 15px;
+    list-style: none;
+}
+
+.social-links-profile>.social-links-div-two {
+    position: relative;
+    width: 100%;
+}
+ 
+.social-links-profile>.social-links-div-two>ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    list-style: none;
+    margin-top: 20px;
+}
+
+.social-links-profile>.social-links-div-two>ul>li {
+    display: block;
+    width: 100%;
+}
+
+.social-links-profile>.social-links-div-two>ul>li>a {
+    display: block;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: #fff;
+    background-color: hsl(0, 0%, 20%);
+    border-radius: 10px;
+    text-align: center;
+}
+
+@font-face {
+    font-family: Inter;
+    src: url("social-links-profile-main/assets/fonts/Inter-VariableFont_slnt\,wght.ttf");
+}
