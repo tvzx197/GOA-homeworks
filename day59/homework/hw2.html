@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        function checkPlan() {
+  const age = parseInt(document.getElementById("age").value);
+  const gender = document.getElementById("gender").value.toLowerCase();
+  const income = parseFloat(document.getElementById("income").value);
+  const result = document.getElementById("result");
+
+  let message = "";
+
+  if (isNaN(age) || isNaN(income)) {
+    message = "გთხოვთ, შეიყვანოთ სწორი ასაკი და შემოსავალი.";
+  } else if (age < 18) {
+    message = "მიიღეთ განათლება და შემდეგ დაიწყეთ ინვესტიცია";
+  } else {
+    if (gender === "ქალი") {
+      if (income > 5000) {
+        message = "თქვენი ფინანსური მდგომარეობა უზრუნველყოფილია";
+      } else if (income > 3000) {
+        message = "ფინანსური პოზიცია სტაბილურია. უკეთესი გეგმაა საჭირო.";
+      } else {
+        message = "გჭირდებათ ფინანსური გეგმის გაუმჯობესება";
+      }
+    } else if (gender === "კაცი") {
+      if (income > 6000) {
+        message = "თქვენ მზად ხართ ინვესტიციებისთვის!";
+      } else if (income > 4000) {
+        message = "შემოსავალი სტაბილურია";
+      } else {
+        message = "გჭირდებათ ფინანსური გეგმის გაუმჯობესება";
+      }
+    } else {
+      message = "გთხოვთ შეიყვანოთ სწორი სქესი (კაცი ან ქალი)";
+    }
+  }
+
+  result.textContent = message;
+}
+    </script>
+</body>
+</html>

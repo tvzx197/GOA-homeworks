@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        function checkPlan() {
+  const age = parseInt(document.getElementById("age").value);
+  const gender = document.getElementById("gender").value.toLowerCase();
+  const income = parseFloat(document.getElementById("income").value);
+  const result = document.getElementById("result");
+
+  let message = "";
+
+  if (isNaN(age) || isNaN(income)) {
+    message = "Please enter a valid age and income.";
+  } else if (age < 18) {
+    message = "Get an education and then start investing.";
+  } else {
+    if (gender === "female") {
+      if (income > 5000) {
+        message = "Your financial situation is secure.";
+      } else if (income > 3000) {
+        message = "Financial position is stable. Better planning is needed.";
+      } else {
+        message = "You need to improve your financial plan.";
+      }
+    } else if (gender === "male") {
+      if (income > 6000) {
+        message = "You are ready for investments!";
+      } else if (income > 4000) {
+        message = "Income is stable.";
+      } else {
+        message = "You need to improve your financial plan.";
+      }
+    } else {
+      message = "Please enter a valid gender (male or female).";
+    }
+  }
+
+  result.textContent = message;
+}
+    </script>
+</body>
+</html>

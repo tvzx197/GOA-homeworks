@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        let usedNumbers = [];
+
+function canUseNumber(number, hasPermission) {
+  if (usedNumbers.includes(number)) {
+    return "Number has already been used.";
+  }
+
+  if (!hasPermission) {
+    return "Permission required to use this number.";
+  }
+
+  usedNumbers.push(number);
+  return "Number accepted.";
+}
+console.log(canUseNumber(5, true));  
+console.log(canUseNumber(6, false));
+    </script>
+</body>
+</html>
