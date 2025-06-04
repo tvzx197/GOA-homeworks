@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        function repeatString(str, times) {
+  if (times < 0) {
+    return "Times must be a non-negative number";
+  }
+  return str.repeat(times);
+}
+console.log(repeatString("Hello", 3));
+console.log(repeatString("Hi!", 0));   
+console.log(repeatString("Test", -2)); 
+    </script>
+</body>
+</html>

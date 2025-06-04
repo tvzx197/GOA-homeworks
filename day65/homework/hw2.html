@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        const student = {
+         name: "ტატო თევზაძე",
+  age: 22,
+  faculty: "კომპიუტერული მეცნიერებები",
+  year: 3,
+  averageGrade: 92.5
+};
+
+
+console.log(student);
+
+
+console.log("სახელი (dot):", student.name);
+console.log("ასაკი (dot):", student.age);
+console.log("ფაკულტეტი (dot):", student.faculty);
+console.log("კურსი (dot):", student.year);
+console.log("საშ. ქულა (dot):", student.averageGrade);
+
+
+console.log("სახელი (bracket):", student["name"]);
+console.log("ასაკი (bracket):", student["age"]);
+console.log("ფაკულტეტი (bracket):", student["faculty"]);
+console.log("კურსი (bracket):", student["year"]);
+console.log("საშ. ქულა (bracket):", student["averageGrade"]);
+
+
+const sentence = `სტუდენტის სახელია ${student.name}, ის არის ${student.age} წლის სწავლობს ${student.faculty}ზე, არის ${student.year}ე კურსზე და მისი საშუალო ქულა არის ${student.averageGrade}.`;
+
+console.log(sentence);
+    </script>
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        const book = {
+  title: "ვეფხისტყაოსანი",
+  author: "შოთა რუსთაველი",
+  year: 1200,
+  genre: "ეპოსი",
+  price: 25.99
+};
+
+
+console.log(book);
+
+
+console.log("Title (dot):", book.title);
+console.log("Author (dot):", book.author);
+console.log("Year (dot):", book.year);
+console.log("Genre (dot):", book.genre);
+console.log("Price (dot):", book.price);
+
+
+console.log("Title (bracket):", book["title"]);
+console.log("Author (bracket):", book["author"]);
+console.log("Year (bracket):", book["year"]);
+console.log("Genre (bracket):", book["genre"]);
+console.log("Price (bracket):", book["price"]);
+
+
+const sentence = `წიგნის სახელწოდებაა "${book.title}", ავტორია ${book.author}, გამოშვებულია ${book.year} წელს, ჟანრია ${book.genre}, ხოლო ფასია ${book.price} ლარი.`;
+console.log(sentence);
+    </script>
+</body>
+</html>

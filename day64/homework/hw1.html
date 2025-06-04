@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        function mathOperations(a, b) {
+  return {
+    sum: a + b,
+    difference: a - b,
+    product: a * b,
+    division: b !== 0 ? a / b : "Cannot divide by zero",
+    power: a ** b,
+    modulo: b !== 0 ? a % b : "Cannot mod by zero"
+  };
+}
+function sumOfSquares(a, b) {
+  return a ** 2 + b ** 2;
+}
+function isEven(n) {
+  return n % 2 === 0 ? "even" : "odd";
+}
+console.log(mathOperations(10, 2));
+console.log("Sum of squares:", sumOfSquares(3, 4));
+console.log("Number is:", isEven(5));
+    </script>
+</body>
+</html>

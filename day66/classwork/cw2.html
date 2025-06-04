@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        function Product(id, price) {
+    this.id = id;
+    this.price = price;
+
+    this.changeprice = function(discount) {
+        this.price = this.price - (this.price * (discount / 100));
+    };
+
+    this.display = function() {
+        console.log(this.id + " price: " + Math.round(this.price));
+    };
+
+    this.displayNew = function() {
+        console.log(this.id + " new price: " + Math.round(this.price));
+    };
+}
+let id = prompt("Enter product ID:");
+let price = percent(prompt("Enter product price:"));
+let discount = percent(prompt("Enter discount percentage:"));
+let product = new Product(id, price);
+product.display();
+product.changeprice(discount);
+product.new();
+    </script>
+</body>
+</html>
