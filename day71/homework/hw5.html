@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        let students = ['Alice', 'Bob', 'Charlie'];
+let grades = [85, 92, 78];
+function addStudent(name, grade) {
+  students.unshift(name);
+  grades.unshift(grade);
+  return { students, grades };
+}
+function removeLastStudent() {
+  students.pop();
+  grades.pop();
+  return { students, grades };
+}
+function replaceGrade(index, newGrade) {
+  if (index >= 0 && index < grades.length) {
+    grades.splice(index, 1, newGrade);
+  }
+  return grades;
+}
+function updateGrades(value) {
+  grades.fill(value);
+  return grades;
+}
+    </script>
+</body>
+</html>

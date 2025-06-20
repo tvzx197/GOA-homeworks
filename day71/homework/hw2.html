@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        const people = [
+  { name: 'Alice' },
+  { name: 'Bob' }
+];
+
+const places = [
+  { city: 'London' },
+  { city: 'Paris' }
+];
+
+let mergedArray = people.concat(places);
+console.log("After concat:", mergedArray);
+
+mergedArray.copyWithin(2, 0, 2);
+console.log("After copyWithin:", mergedArray);
+
+mergedArray.fill({ city: 'New York' }, mergedArray.length - 2);
+console.log("After fill:", mergedArray);
+
+mergedArray.pop();
+console.log("After pop:", mergedArray);
+mergedArray.shift();
+console.log("After shift:", mergedArray);
+mergedArray.unshift({ name: 'Charlie' }, { name: 'David' });
+console.log("Final result:", mergedArray);
+    </script>
+</body>
+</html>

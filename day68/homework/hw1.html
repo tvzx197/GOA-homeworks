@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        const university = {
+  name: "Tbilisi State University",
+  departments: 8,
+  website: "https://www.tsu.ge",
+  ratings: {
+    student1: 4.5,
+    student2: 4.0,
+    student3: 4.8
+  }
+};
+console.log(Object.entries(university));
+console.log("scholarship" in university); 
+const updatedUniversity = Object.assign({}, university, { studentsCount: 25000 });
+console.log(updatedUniversity);
+Object.freeze(updatedUniversity);
+updatedUniversity.name = "Iliauni"; 
+console.log(updatedUniversity.name); 
+
+console.log(Object.isFrozen(updatedUniversity));
+    </script>
+</body>
+</html>

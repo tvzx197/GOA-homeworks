@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        let academy = {
+  name: "academy",
+  courses: ["JavaScript", "Python", "html"],
+  socialLink: "something",
+  reviews: {
+    user1: {
+      name: "vinme",
+      status: "parent",
+      review: "something"
+    },
+    user2: {
+      name: "daTo",
+      status: "child",
+      review: "rame"
+    },
+    user3: {
+      name: "gio",
+      status: "parent",
+      review: "something"
+    }
+  }
+};
+ console.log(academy[key]);
+ console.log(Object.keys(academy));
+ console.log(Object.values(academy));
+ console.log(academy.hasOwn("courses")); 
+console.log(academy.hasOwn("location"));
+let wholeacademy = Object.assign({}, academy, additionalInfo);
+Object.freeze(academy);
+console.log(wholeacademy);
+    </script>
+</body>h
+</html>

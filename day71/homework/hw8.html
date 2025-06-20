@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        let library = [
+  { title: "1984", author: "George Orwell", copies: 4 },
+  { title: "To Kill a Mockingbird", author: "Harper Lee", copies: 3 },
+  { title: "The Great Gatsby", author: "F. Scott Fitzgerald", copies: 5 }
+];
+function addBook(book) {
+  library.push(book);
+  return library;
+}
+
+function removeLastBook() {
+  library.pop();
+  return library;
+}
+
+function updateBookCopies(title, newCopies) {
+  for (let i = 0; i < library.length; i++) {
+    if (library[i].title === title) {
+      let updatedBook = { ...library[i], copies: newCopies };
+      library.splice(i, 1, updatedBook);
+      break;
+    }
+  }
+  return library;
+}
+
+function listBooks() {
+  return library.map(book => book.title).join(', ');
+}
+function extractBooks() {
+  return library.slice(0, 2); // first two books
+}
+function modifyBooks() {
+  // Convert objects to string to use copyWithin, then back to object
+  const temp = library.map(book => JSON.stringify(book));
+  temp.copyWithin(temp.length - 1, 0, 1); // Copy first book to last position
+  library = temp.map(book => JSON.parse(book));
+  return library;
+}
+function resetCopies(copies) {
+  library = library.map(book => ({ ...book, copies }));
+  return library;
+}
+function removeFirstBook() {
+  library.shift();
+  return library;
+}
+
+function addFirstBook(book) {
+  library.unshift(book);
+  return library;
+}
+    </script>
+</body>
+</html>

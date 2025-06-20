@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        const hotel = {
+  hotelName: "Radisson Blu",
+  stars: 5,
+  location: "Batumi",
+  guestReviews: {
+    guest1: "Excellent",
+    guest2: "Very Good",
+    guest3: "Good"
+  }
+};
+console.log(Object.entries(hotel));
+
+console.log("spa" in hotel);
+const updatedHotel = Object.assign({}, hotel, { roomsCount: 120 });
+console.log(updatedHotel);
+Object.freeze(updatedHotel);
+updatedHotel.stars = 3; 
+console.log(updatedHotel.stars); 
+console.log(Object.isFrozen(updatedHotel));
+    </script>
+</body>
+</html>

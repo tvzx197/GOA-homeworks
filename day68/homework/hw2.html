@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        const sportsClub = {
+  clubName: "Dinamo Tbilisi",
+  sportType: "Football",
+  foundedYear: 1925,
+  achievements: {
+    title1: "UEFA Cup Winners' Cup",
+    title2: "Georgian League",
+    title3: "Georgian Cup"
+  }
+};
+console.log(Object.keys(sportsClub));
+console.log(Object.values(sportsClub));
+
+console.log("sponsors" in sportsClub); 
+const updatedSportsClub = Object.assign({}, sportsClub, { stadiumCapacity: 54000 });
+console.log(updatedSportsClub);
+
+Object.freeze(updatedSportsClub);
+updatedSportsClub.foundedYear = 2000; 
+console.log(updatedSportsClub.foundedYear); 
+
+
+console.log(Object.isFrozen(updatedSportsClub)); 
+    </script>
+</body>
+</html>

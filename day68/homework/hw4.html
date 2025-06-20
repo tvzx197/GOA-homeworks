@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        const cinema = {
+  cinemaName: "Amirani Cinema",
+  moviesCount: 12,
+  location: "Tbilisi",
+  movieReviews: {
+    user1: 5,
+    user2: 4,
+    user3: 3
+  }
+};
+
+console.log(Object.entries(cinema));
+console.log("vipSeats" in cinema);
+
+const updatedCinema = Object.assign({}, cinema, { ticketPrice: 12 });
+console.log(updatedCinema);
+Object.freeze(updatedCinema);
+updatedCinema.moviesCount = 20;
+console.log(updatedCinema.moviesCount); 
+console.log(Object.isFrozen(updatedCinema)); 
+    </script>
+</body>
+</html>
