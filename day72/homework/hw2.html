@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Random Name Selector</title>
+</head>
+<body>
+  <h2>ვინ გადაიხდის?</h2>
+  <button onclick="whoPays()">აირჩიე</button>
+  <p id="result"></p>
+
+  <script>
+    const names = ["გიორგი", "ნიკა", "თამარი", "ანა", "ლაშა"];
+
+    function whoPays() {
+      const randomIndex = Math.floor(Math.random() * names.length);
+      const chosen = names[randomIndex];
+      document.getElementById("result").textContent = `${chosen} უნდა გადაიხადოს ყველას საკვების თანხა!`;
+    }
+  </script>
+</body>
+</html>

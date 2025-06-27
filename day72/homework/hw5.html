@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        function calculateLove() {
+  const name1 = document.getElementById("name1").value.trim();
+  const name2 = document.getElementById("name2").value.trim();
+  const result = document.getElementById("result");
+
+  if (name1 === "" || name2 === "") {
+    result.textContent = " გთხოვ შეიყვანე ორივე სახელი!";
+    return;
+  }
+
+  const percentage = Math.floor(Math.random() * 101);
+  result.textContent = `${name1}  ${name2} = ${percentage}% Love!`;
+}
+    </script>
+</body>
+</html>

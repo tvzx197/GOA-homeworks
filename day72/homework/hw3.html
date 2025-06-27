@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>FizzBuzz Filter</title>
+</head>
+<body>
+  <h2>FizzBuzz შედეგი:</h2>
+  <button onclick="runFizzBuzz()">გაშვება</button>
+  <pre id="output"></pre>
+
+  <script>
+    function runFizzBuzz() {
+      const result = [];
+
+      for (let i = 1; i <= 30; i++) {
+        if (i % 3 === 0 && i % 5 === 0) {
+          result.push("FizzBuzz");
+        } else if (i % 3 === 0) {
+          result.push("Fizz");
+        } else if (i % 5 === 0) {
+          result.push("Buzz");
+        }
+      }
+
+      document.getElementById("output").textContent = result.join(", ");
+    }
+  </script>
+</body>
+</html>
